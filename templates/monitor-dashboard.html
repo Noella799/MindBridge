@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent and Teacher Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/app.js" defer></script>
+</head>
+<body data-page="monitor">
+    <header class="topbar">
+        <h2>MindBridge</h2>
+        <button type="button" data-logout>Logout</button>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1>Children’s Progress</h1>
+            <p>Welcome, <strong id="monitorName"></strong>.</p>
+            <p>View children’s progress and emotional check-ins.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Child</th>
+                            <th>Email</th>
+                            <th>Progress</th>
+                            <th>Latest Feeling</th>
+                            <th>Support</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentsBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

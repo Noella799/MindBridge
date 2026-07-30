@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBridge Login</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/app.js" defer></script>
+</head>
+<body data-page="login">
+    <main class="page">
+        <section class="card">
+            <h1>MindBridge</h1>
+            <h2>Login</h2>
+            <p>Enter your account information.</p>
+
+            <form id="loginForm">
+                <label for="loginEmail">Email address</label>
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="loginPassword">Password</label>
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <button type="submit">Login</button>
+                <p id="loginMessage" class="message"></p>
+            </form>
+
+            <p class="center">
+                Do not have an account?
+                <a href="/signup">Create an account</a>
+            </p>
+
+            <div class="demo">
+                <strong>Demo accounts</strong>
+                <p>Child: child@mindbridge.test / 1234</p>
+                <p>Parent: parent@mindbridge.test / 1234</p>
+                <p>Teacher: teacher@mindbridge.test / 1234</p>
+                <p>Counsellor: counsellor@mindbridge.test / 1234</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

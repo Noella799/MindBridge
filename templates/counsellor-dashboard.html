@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counsellor Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/app.js" defer></script>
+</head>
+<body data-page="counsellor">
+    <header class="topbar">
+        <h2>MindBridge</h2>
+        <button type="button" data-logout>Logout</button>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1>Counsellor Dashboard</h1>
+            <p>Welcome, <strong id="counsellorName"></strong>.</p>
+            <h2>Children’s Check-ins</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Child</th>
+                            <th>Feeling</th>
+                            <th>Reason</th>
+                            <th>Support Requested</th>
+                        </tr>
+                    </thead>
+                    <tbody id="counsellorChildrenBody"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Share Advice</h2>
+            <form id="adviceForm">
+                <label for="adviceChild">Select child</label>
+                <select id="adviceChild" required>
+                    <option value="">Choose a child</option>
+                </select>
+
+                <label for="adviceMessage">Advice message</label>
+                <textarea
+                    id="adviceMessage"
+                    rows="5"
+                    placeholder="Write supportive advice"
+                    required
+                ></textarea>
+
+                <button type="submit">Share Advice</button>
+                <p id="adviceMessageStatus" class="message"></p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

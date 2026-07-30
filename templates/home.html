@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBridge Home</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/app.js" defer></script>
+</head>
+<body data-page="child">
+    <header class="topbar">
+        <h2>MindBridge</h2>
+        <button type="button" data-logout>Logout</button>
+    </header>
+
+    <main class="container">
+        <section class="section center">
+            <h1>Welcome to MindBridge</h1>
+            <p>Welcome, <strong id="childName"></strong></p>
+            <p>Role: <strong>child</strong></p>
+        </section>
+
+        <section class="section">
+            <h2>Learning Resources</h2>
+            <div id="resourcesGrid" class="resource-grid"></div>
+            <p id="progressText" class="message"></p>
+        </section>
+
+        <section class="section">
+            <h2>Feelings Check-in</h2>
+
+            <form id="checkinForm">
+                <label for="feeling">How are you feeling?</label>
+                <select id="feeling" required>
+                    <option value="">Choose a feeling</option>
+                    <option value="Happy">Happy</option>
+                    <option value="Sad">Sad</option>
+                    <option value="Worried">Worried</option>
+                    <option value="Angry">Angry</option>
+                    <option value="Confused">Confused</option>
+                </select>
+
+                <label for="reason">What made you feel this way?</label>
+                <textarea id="reason" rows="4" required></textarea>
+
+                <label class="check agreement">
+                    <input type="checkbox" id="supportRequested">
+                    I would like support from a trusted adult.
+                </label>
+
+                <button type="submit">Save Check-in</button>
+                <p id="checkinMessage" class="message"></p>
+            </form>
+        </section>
+
+        <section class="section">
+            <h2>Counsellor Advice</h2>
+            <div id="adviceList">
+                <p>No advice has been shared yet.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

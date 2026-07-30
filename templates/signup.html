@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/app.js" defer></script>
+</head>
+<body data-page="signup">
+    <main class="page">
+        <section class="card">
+            <h1>Create Account</h1>
+
+            <form id="signupForm">
+                <label for="signupName">Full name</label>
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="signupEmail">Email address</label>
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="signupPassword">Password</label>
+                <input
+                    type="password"
+                    id="signupPassword"
+                    minlength="4"
+                    placeholder="Create a password"
+                    required
+                >
+
+                <label for="signupRole">Role</label>
+                <select id="signupRole" required>
+                    <option value="">Choose your role</option>
+                    <option value="child">Child</option>
+                    <option value="parent">Parent</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="counsellor">Counsellor</option>
+                </select>
+
+                <label class="check agreement">
+                    <input type="checkbox" id="terms" required>
+                    I agree to use MindBridge respectfully.
+                </label>
+
+                <button type="submit">Create Account</button>
+                <p id="signupMessage" class="message"></p>
+            </form>
+
+            <p class="center">
+                Already registered?
+                <a href="/">Return to Login</a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
