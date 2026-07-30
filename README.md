@@ -14,3 +14,4 @@ parents, teachers and counsellors.
 - Parent/teacher monitoring
 - Active/inactive child accounts
 - Counsellor advice
+http://127.0.0.1:8000
