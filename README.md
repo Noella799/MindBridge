@@ -104,7 +104,7 @@ Render Deployment Settings
 Build Command: pip install -r requirements.txt
 Start Command: uvicorn main:app --host 0.0.0.0 --port $PORT
 Add these environment variables in Render:
-DATABASE_URL = Render Internal Database URL
+DATABASE_URL = postgresql://mindbridge_user:hvU53iO9XsK4jrN0PHXUBe1pETJyFqiY@dpg-d9ls6bh5efls73brcvog-a/mindbridge_tax0
 SECRET_KEY = a private secret value
 Author
 Uwera Noella
