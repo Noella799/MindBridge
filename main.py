@@ -200,8 +200,9 @@ def html_page(
         )
 
     return templates.TemplateResponse(
-        template_name,
-        {"request": request},
+        request=request,
+        name=template_name,
+        context={},
     )
 
 
@@ -219,16 +220,18 @@ def login_page(
         )
 
     return templates.TemplateResponse(
-        "index.html",
-        {"request": request},
+        request=request,
+        name="index.html",
+        context={},
     )
 
 
 @app.get("/signup", response_class=HTMLResponse)
 def signup_page(request: Request):
     return templates.TemplateResponse(
-        "signup.html",
-        {"request": request},
+        request=request,
+        name="signup.html",
+        context={},
     )
 
 
